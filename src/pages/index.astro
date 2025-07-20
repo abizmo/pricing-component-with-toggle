@@ -1,20 +1,9 @@
 ---
-
+import PricingWithToggle from "../components/pricing-with-toggle.svelte";
+import RootLayout from "../layouts/root.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Frontend Mentor | Pricing Component with Toggle</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<RootLayout title="Pricing Component with Toggle">
+  <h1>Our Pricing</h1>
+  <PricingWithToggle client:load />
+</RootLayout>
