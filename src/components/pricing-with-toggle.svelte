@@ -28,18 +28,18 @@
 <ul>
   {#each plans as plan}
     <li>
-      <div>
-        <h3>{plan.name}</h3>
-        <p>
+      <div class="plan">
+        <h3 class="plan-title">{plan.name}</h3>
+        <p class="plan-price">
           Price: {isMonthly ? plan.priceMonthly : plan.priceAnnual}
           {isMonthly ? "/ month" : "/ year"}
         </p>
-        <ul>
+        <ul class="plan-features">
           {#each plan.features as feature}
-            <li>{feature}</li>
+            <li class="plan-feature">{feature}</li>
           {/each}
         </ul>
-        <button>Learn more</button>
+        <a href="#" class="button">Learn more</a>
       </div>
     </li>
   {/each}
