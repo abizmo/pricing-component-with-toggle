@@ -1,0 +1,11 @@
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+  --fs-base: 0.9375rem;
+
+  --clr-debug: #ff0000;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+}
