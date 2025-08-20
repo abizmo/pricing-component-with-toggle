@@ -31,8 +31,7 @@
       <div class="plan">
         <h3 class="plan-title">{plan.name}</h3>
         <p class="plan-price">
-          Price: {isMonthly ? plan.priceMonthly : plan.priceAnnual}
-          {isMonthly ? "/ month" : "/ year"}
+          <span>$</span>{isMonthly ? plan.priceMonthly : plan.priceAnnual}
         </p>
         <ul class="plan-features">
           {#each plan.features as feature}
@@ -44,3 +43,39 @@
     </li>
   {/each}
 </ul>
+
+<style>
+  .plan {
+    background-color: var(--clr-debug);
+    padding: 1.875rem;
+  }
+
+  .plan-title {
+    font-size: var(--fs-lg);
+  }
+
+  .plan-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-3xl);
+    letter-spacing: var(--ls-tight);
+
+    & > span {
+      font-size: var(--fs-2xl);
+    }
+  }
+
+  .plan-features {
+  }
+
+  .plan-feature {
+  }
+
+  .button {
+    font-size: var(--fs-sm);
+    letter-spacing: var(--ls-wide);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+</style>

@@ -1,11 +1,36 @@
 :root {
-  --ff-primary: "Montserrat", sans-serif;
-  --fs-base: 0.9375rem;
-
   --clr-debug: #ff0000;
+
+  --ff-primary: "Montserrat", sans-serif;
+
+  --fs-3xl: 4.5rem;
+  --fs-2xl: 2.5rem;
+  --fs-xl: 2rem;
+  --fs-lg: 1.125rem;
+  --fs-base: 0.9375rem;
+  --fs-sm: 0.8125rem;
+
+  --fw-regular: 700;
+
+  --ls-wide: 0.1em;
+  --ls-tight: -0.03em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
 }
