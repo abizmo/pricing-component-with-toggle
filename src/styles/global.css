@@ -1,6 +1,13 @@
 :root {
-  --clr-debug: #ff0000;
+  /* Colors from style guide */
+  --clr-gradient-start: hsl(237, 73%, 79%);
+  --clr-gradient-end: hsl(238, 63%, 64%);
+  --clr-blue-50: hsl(240, 78%, 98%);
+  --clr-gray-650: hsl(233, 13%, 49%);
+  --clr-gray-700: hsl(232, 13%, 33%);
+  --clr-white: hsl(0, 0%, 100%);
 
+  /* Typography */
   --ff-primary: "Montserrat", sans-serif;
 
   --fs-3xl: 4.5rem;
@@ -14,6 +21,17 @@
 
   --ls-wide: 0.1em;
   --ls-tight: -0.03em;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Border radius */
+  --radius-sm: 0.3125rem;
+  --radius-md: 0.625rem;
 }
 
 *,
@@ -29,6 +47,13 @@ body {
   font-size: var(--fs-base);
   font-weight: var(--fw-regular);
   text-align: center;
+  padding: var(--space-md);
+  background-color: var(--clr-blue-50);
+  color: var(--clr-gray-700);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul {
