@@ -4,12 +4,33 @@ import RootLayout from "@layouts/root.astro";
 ---
 
 <RootLayout title="Pricing Component with Toggle">
-  <h1>Our Pricing</h1>
-  <PricingWithToggle client:load />
+  <main>
+    <h1>Our Pricing</h1>
+    <PricingWithToggle client:load />
+  </main>
 </RootLayout>
 
 <style>
+  main {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: var(--space-md);
+  }
+
   h1 {
     font-size: var(--fs-xl);
+    color: var(--clr-gray-700);
+    margin-bottom: var(--space-xl);
+  }
+
+  @media (min-width: 768px) {
+    main {
+      padding: var(--space-xl);
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
   }
 </style>
