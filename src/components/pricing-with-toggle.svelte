@@ -51,6 +51,7 @@
       gap: 0;
       max-width: 1110px;
       margin: 0 auto;
+      align-items: center;
     }
   }
 
@@ -77,8 +78,10 @@
     }
 
     .plan.highlighted {
-      padding: var(--space-xl) var(--space-lg);
-      transform: scale(1.05);
+      padding: 3.5rem var(--space-lg);
+      z-index: 1;
+      border-radius: var(--radius-md);
+      box-shadow: 0 30px 60px rgba(174, 171, 229, 0.6);
     }
 
     .plan:first-child {
