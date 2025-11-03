@@ -1,7 +1,7 @@
 <script lang="ts">
   import Switch from "@components/switch.svelte";
   import { pricingPlans } from '@data/pricing-plans.ts';
-  import type { BillingPeriod } from '@types/pricing.ts';
+  import type { BillingPeriod } from '@types/pricing';
 
   let billingPeriod: BillingPeriod = 'annual';
 
@@ -11,7 +11,9 @@
   }));
 </script>
 
-<Switch bind:value={billingPeriod} />
+<div class="switch-wrapper">
+  <Switch bind:value={billingPeriod} />
+</div>
 <div class="pricing-grid">
   {#each currentPlans as plan}
     <article class="plan" class:highlighted={plan.highlighted}>
@@ -31,6 +33,12 @@
 </div>
 
 <style>
+  .switch-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-xl);
+  }
+
   .pricing-grid {
     display: grid;
     gap: var(--space-lg);
