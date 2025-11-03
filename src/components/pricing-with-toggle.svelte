@@ -42,14 +42,15 @@
   .pricing-grid {
     display: grid;
     gap: var(--space-lg);
-    max-width: 1110px;
-    margin: 0 auto;
+    width: 100%;
   }
 
   @media (min-width: 768px) {
     .pricing-grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
+      max-width: 1110px;
+      margin: 0 auto;
     }
   }
 
