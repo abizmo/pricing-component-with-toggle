@@ -65,14 +65,17 @@
     text-align: center;
   }
 
+  .plan.highlighted {
+    background: linear-gradient(135deg, var(--clr-gradient-start), var(--clr-gradient-end));
+    color: var(--clr-white);
+  }
+
   @media (min-width: 768px) {
     .plan {
       padding: var(--space-lg) var(--space-md);
     }
 
     .plan.highlighted {
-      background: linear-gradient(135deg, var(--clr-gradient-start), var(--clr-gradient-end));
-      color: var(--clr-white);
       padding: var(--space-xl) var(--space-lg);
       transform: scale(1.05);
     }
